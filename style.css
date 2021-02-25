@@ -81,6 +81,10 @@ body {
   background-image: url('images/reflex.png');
 }
 
+.project.games {
+  background-image: url('images/games.png');
+}
+
 .project.crwn {
   background-image: url('images/crwn.png');
 }
@@ -95,10 +99,6 @@ body {
 
 .project.travel {
   background-image: url('images/travelapp.png');
-}
-
-.project.gatsby {
-  background-image: url('images/gatsby.png');
 }
 
 .project a {
