@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-image: linear-gradient(to right, #8e9eab 0%, #eef2f3 100%);
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.header {
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 40px auto 20px;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.own-projects,
+.course-projects {
+  padding: 40px;
+  display: grid;
+  grid-gap: 20px;
+}
+
+.course-projects {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 60%;
+}
+
+.section-title {
+  width: 100%;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.project {
+  height: 200px;
+  width: 350px;
+  cursor: pointer;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.3);
+  background-size: cover;
+  background-position: center center;
+  overflow: hidden;
+  border-radius: 10px;
+  position: relative;
+  transition: transform 1s ease;
+}
+
+.project:hover {
+  transform: scale(1.05);
+}
+
+.project::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.project.reflex {
+  background-image: url('images/reflex.png');
+}
+
+.project.crwn {
+  background-image: url('images/crwn.png');
+}
+
+.project.social {
+  background-image: url('images/social.png');
+}
+
+.project.yelpcamp {
+  background-image: url('images/yelpcamp.png');
+}
+
+.project.travel {
+  background-image: url('images/travelapp.png');
+}
+
+.project.gatsby {
+  background-image: url('images/gatsby.png');
+}
+
+.project a {
+  font-weight: 300;
+  text-decoration: none;
+  color: #000;
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  transform: translateY(-50%);
+  width: 100%;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
